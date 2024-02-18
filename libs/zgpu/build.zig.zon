@@ -1,0 +1,21 @@
+.{
+    .name = "zgpu",
+    .version = "0.9.1",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "libs",
+        "src",
+        "README.md",
+    },
+    .dependencies = .{
+        .system_sdk = .{ .path = "../system-sdk" },
+        .zglfw = .{ .path = "../zglfw" },
+        .zpool = .{ .path = "../zpool" },
+        .dawn_x86_64_windows_gnu = .{ .path = "pkg/webgpu_dawn-x86_64-windows-gnu-d3a68014e6b6b53fd330a0ccba99e4dcfffddae5" },
+        .dawn_x86_64_linux_gnu = .{ .path = "pkg/webgpu_dawn-x86_64-linux-gnu-7d70db023bf254546024629cbec5ee6113e12a42" },
+        .dawn_aarch64_linux_gnu = .{ .path = "pkg/webgpu_dawn-aarch64-linux-gnu-c1f55e740a62f6942ff046e709ecd509a005dbeb" },
+        .dawn_aarch64_macos = .{ .path = "pkg/webgpu_dawn-aarch64-macos-d2360cdfff0cf4a780cb77aa47c57aca03cc6dfe" },
+        .dawn_x86_64_macos = .{ .path = "pkg/webgpu_dawn-x86_64-macos-901716b10b31ce3e0d3fe479326b41e91d59c661" },
+    },
+}
